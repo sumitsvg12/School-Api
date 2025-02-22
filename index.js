@@ -40,6 +40,8 @@ app.use(passport.session());
 
 
 app.use("/api",require("./routes/Api/V1/Adminroutes/adminauth"));
+app.use("/api/faculty",require("./routes/Api/V1/Facultyroutes/Facultyauth"));
+app.use("/api/student",require("./routes/Api/V1/Studentroutes/Studentauth"));
 
 app.listen(port,(err)=>{
     if(err){
